@@ -34,6 +34,7 @@ html{
 
 .inscription p{
     font-weight: 600;
+    font-size: 17px;
     color: #0065FC;
 }
 
@@ -46,7 +47,9 @@ html{
 }
 .menu a:hover {
     color: #0065FC;
-    text-decoration: overline #0065FC;
+    border-top: solid #0065FC;
+    border-width: 10px 10px 0px;
+    padding-top: 44px;
 }
 
 /* Texte + barre de recherche ------*/
@@ -104,26 +107,37 @@ button {
     padding-left: 0;
 }
 
+button p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Filtres de recherche + texte -------*/
 
 .filter{
+    padding-top: 20px;
+    margin-left: 40px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    font-size: 15px;
-    font-weight: 600;
-    padding-top: 20px;
 }
 
-.filters{
+.filter-title {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.filters {
     display: flex;
     flex-direction: row;
 }
 
 .economy{
+    display: flex;
     margin-left: 20px;
-}
 
+}
 .economy p{
     border: solid #F2F2F2;
     border-left: none;
@@ -132,7 +146,9 @@ button {
     align-items: center;
     justify-content: center;
     border-radius: 27px 27px 27px 27px;
-    padding-right: 20px;
+    padding: 0 20px 0 0;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .economy i{
@@ -163,6 +179,8 @@ button {
     justify-content: center;
     border-radius: 27px 27px 27px 27px;
     padding-right: 20px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .family i{
@@ -193,6 +211,8 @@ button {
     justify-content: center;
     border-radius: 27px 27px 27px 27px;
     padding-right: 20px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .romance i{
@@ -223,6 +243,8 @@ button {
     justify-content: center;
     border-radius: 27px 27px 27px 27px;
     padding-right: 15px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .animals i{
@@ -244,6 +266,7 @@ button {
     align-items: center;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-left: 40px;
 }
 
 .info i{
@@ -610,26 +633,45 @@ button {
 }
 
 
-@media screen and (max-width: 375px)
+
+/* Media queries -------------*/
+
+@media only screen and (min-width: 375px)
 {
     body{
         width: 100vh;
     }
+
     .logo{
         width: 300px;
         height: 100px;
-        margin-left: 10px;
-    }
-    .menu{
-      display: flex;
     }
 
-    .inscription p{
-        font-size: 10vw;
+    .menu{
+        display: inline;
     }
 
     .menu-txt{
-       font-size: 10vw;
+       font-size: 14vw;
+    }
+
+    .menu-txt li a{
+     }
+
+    .menu a:hover {
+        color: #0065FC;
+        border-bottom: solid 8px #0065FC;
+        padding-bottom: 30px;
+        border-top: none;
+    }
+
+    .inscription{
+        display: grid;
+    }
+
+    .inscription p{
+        font-size: 14vw;
+
     }
 
     .container .container-text p{
@@ -643,6 +685,7 @@ button {
     .research i{
         width: 100px;
         height: 94px;
+        font-size: 2.5rem;
     }
 
     input{
@@ -656,13 +699,18 @@ button {
         height: 100px;
         width: 70px;
         border-radius: 17px 17px 17px 17px;
+        background-image: ;
+    }
+
+    button p{
+        display: none;
     }
 
     .filter{
         display: grid;
     }
 
-    .filter p{
+    .filter-title {
         font-size: 10vw;
     }
 
@@ -670,32 +718,179 @@ button {
         display: grid;
     }
 
-    .economy {
+    .economy p{
+        font-size: 10vw;
         height: 100px;
+        width: 350px;
+        border: solid 6px #F2F2F2;
+        border-radius: 50px 50px 50px 50px;
+        padding-right: 40px;
+        border-left: none;
     }
 
     .economy i{
-        width: 60px;
-        height: 60px;
-        margin-right: 10px;
+        width: 100px;
+        height: 100px;
+        font-size: 2.5rem;
+        margin-right: 25px;
+        border-radius: 50px 50px 50px 50px;
     }
 
     .family{
         grid-column: 2;
+        font-size: 10vw;
+        margin-left: -70px;
+    }
+
+    .family p{
+        font-size: 10vw;
+        height: 100px;
+        width: 280px;
+        border: solid 6px #F2F2F2;
+        border-radius: 50px 50px 50px 50px;
+        border-left: none;
+        padding-right: 30px;
+    }
+
+    .family i{
+        width: 100px;
+        height: 100px;
+        font-size: 2.5rem;
+        margin-right: 30px;
+        border-radius: 50px 50px 50px 50px;
+    }
+
+    .romance p{
+        font-size: 10vw;
+        height: 100px;
+        width: 350px;
+        border: solid 6px #F2F2F2;
+        border-radius: 50px 50px 50px 50px;
+        padding-right: 60px;
+        border-left: none;
+    }
+
+    .romance i{
+        width: 100px;
+        height: 100px;
+        font-size: 2.5rem;
+        margin-right: 25px;
+        border-radius: 50px 50px 50px 50px;
     }
 
     .animals{
         grid-column: 1;
     }
 
+    .animals p{
+        font-size: 10vw;
+        height: 100px;
+        width: 460px;
+        border: solid 6px #F2F2F2;
+        border-radius: 50px 50px 50px 50px;
+        border-left: none;
+        padding-right: 30px;
+    }
+
+    .animals i{
+        width: 100px;
+        height: 100px;
+        font-size: 2.5rem;
+        margin-right: 25px;
+        border-radius: 50px 50px 50px 50px;
+    }
+
+    .info{
+        margin-left: 50px;
+        margin-right: 0;
+    }
+
     .info i{
-        width: 90px;
-        height: 70px;
+        font-size: 2rem;
+        border-radius: 50px 50px 50px 50px;
+        border: solid 6px #F2F2F2;
+        width: 80px;
+        height: 60px;
     }
 
     .info p{
-        font-size: 12vw;
+        font-size: 10vw;
     }
+
+
+
+    .populaire{
+        background-color: #F2F2F2;
+        border-radius: 15px 15px 15px 15px;
+        display: flex;
+        flex-direction: column;
+        width: 880px;
+        height: 1250px;
+        margin: 0;
+    }
+
+    .populaire h2{
+        font-size: 15vw;
+        padding-left: 40px;
+    }
+
+    .populaire h2 i{
+        margin-left: 165px;
+    }
+
+    .card-first{
+        border-radius: 40px 40px 40px 40px;
+        width: 730px;
+        height: 300px;
+        margin-left: 60px;
+    }
+
+    .card1{
+        border-radius: 40px 40px 40px 40px;
+        width: 730px;
+        height: 300px;
+        margin-left: 60px;
+    }
+
+    .card1-p1 img{
+        width: 260px;
+        height: 285px;
+        border-radius: 40px 0 0 40px;
+        padding-left: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .card1-text{
+        font-size: 10vw;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+
+    .card1-text2{
+        font-size: 8vw;
+        padding-left: 20px;
+    }
+
+    .star1 {
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    .star1 i{
+        font-size: 1.5rem;
+    }
+
+    .star2 {
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    .star2 i{
+        font-size: 1.5rem;
+    }
+
+
 
 
 
@@ -708,6 +903,11 @@ button {
         background-color: white;
     }
 
+    .hebergement h2{
+        font-size: 13vw;
+        margin-bottom: 0;
+    }
+
     .cards1{
         display: flex;
         flex-direction: column;
@@ -716,10 +916,65 @@ button {
     .cards2{
         display: flex;
         flex-direction: column;
+        margin-top: 0;
     }
 
+    .card {
+        border-radius: 40px 40px 40px 40px;
+        width: 730px;
+        height: 390px;
+        margin-top: 30px;
+    }
+
+    .card-p1 img {
+        width: 720px;
+        height: 210px;
+        border-radius: 40px 40px 0 0;
+        padding-left: 3px;
+        padding-top: 3px;
+        padding-right: 3px;
+    }
+
+    .card-text{
+        font-size: 9vw;
+        margin-top: 7px;
+        margin-left: 14px;
+    }
+
+    .card-text1{
+        font-size: 8vw;
+        padding-top: 0;
+        margin-left: 14px;
+    }
+
+    .star {
+        margin-left: 14px;
+        padding-top: 0;
+    }
+
+    .star i{
+        font-size: 1.5rem;
+    }
+
+    .afficher {
+        margin-left: 10px;
+        margin-top: 50px;
+        font-size: 9vw;
+    }
+
+
+
+
+
     .activités{
-        margin-top: 950px;
+        margin-top: 2100px;
+        width: 100vh;
+        margin-left: 60px;
+    }
+
+    .activités h2{
+        font-size: 13vw;
+        margin-bottom: 0;
     }
 
     .cards-a{
@@ -731,11 +986,80 @@ button {
         margin-left: 0;
     }
 
+    .carte-a{
+        border-radius: 40px 40px 40px 40px;
+        width: 730px;
+        height: 300px;
+        margin-top: 50px;
+    }
 
+    .carte-a img {
+        width: 730px;
+        height: 210px;
+        border-radius: 40px 40px 0 0;
+        padding: 0;
+    }
 
+    .carte-a-text{
+        font-size: 8vw;
+        margin-top: 15px;
+        margin-left: 14px;
+    }
 
+    .pomegues{
+        border-radius: 40px 40px 40px 40px;
+        width: 730px;
+        height: 300px;
+        margin-top: 50px;
+    }
 
+    .pomegues1 img{
+        width: 730px;
+        height: 210px;
+        border-radius: 40px 40px 0 0;
+        padding: 0;
+    }
 
+    .frioul {
+        border-radius: 40px 40px 40px 40px;
+        width: 730px;
+        height: 300px;
+    }
+
+    .frioul1 img{
+        width: 730px;
+        height: 210px;
+        border-radius: 40px 40px 0 0;
+        padding: 0;
+    }
+
+    .notre-dame{
+        border-radius: 40px 40px 40px 40px;
+        width: 730px;
+        height: 300px;
+        margin-top: 50px;
+
+    }
+
+    .notre-dame1 img{
+        width: 730px;
+        height: 210px;
+        border-radius: 40px 40px 0 0;
+        padding: 0;
+    }
+
+    .parc{
+        border-radius: 40px 40px 40px 40px;
+        width: 730px;
+        height: 300px;
+    }
+
+    .parc1 img{
+        width: 730px;
+        height: 210px;
+        border-radius: 40px 40px 0 0;
+        padding: 0;
+    }
 
 
     .page-end{
@@ -761,38 +1085,89 @@ button {
 }
 
 
-/* 
+@media only screen and (min-width: 720px)
+{
+    body{
+        width: 1438px;
+    }
+    .menu-txt{
+        float: right;
+    }
 
-.research i{
-    border: solid #F2F2F2;
-    background: #F2F2F2;
-    width: 50px;
-    height: 44px;
-    display: flex;
-    border-radius: 17px 0px 0px 17px;
-    justify-content: center;
-    align-items: center;
+
+    .populaire{
+        width: 400px;
+    }
+
+    .card-first{
+        width: 335px;
+        height: 165px;
+    }
+
+    .card1{
+        width: 335px;
+        height: 165px;
+    }
+
+    .card1-p1 img{
+        width: 170px;
+        height: 160px;
+    }
+
+
+
+    .carte-a{
+        width: 300px;
+        height: 455px;
+    }
+
+    .carte-a img {
+        width: 300px;
+        height: 390px;
+    }
+
+
+    .pomegues{
+        width: 300px;
+        height: 230px;
+    }
+
+    .pomegues1 img{
+        width: 300px;
+        height: 180px;
+    }
+
+
+    .frioul {
+        width: 300px;
+        height: 180px;
+    }
+
+    .frioul1 img{
+        width: 300px;
+        height: 135px;
+    }
+
+
+    .notre-dame{
+        width: 300px;
+        height: 180px;
+    }
+
+    .notre-dame1 img{
+        width: 300px;
+        height: 135px;
+    }
+
+
+    .parc{
+        width: 300px;
+        height: 230px;
+    }
+
+    .parc1 img{
+        width: 300px;
+        height: 180px;
+    }
+
 }
-
-input{
-    width: 150px;
-    height: 50px;
-    border: solid 2px #F2F2F2;
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-button {
-    background: #0065FC;
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-    border: 0;
-    border-radius: 0 17px 17px 0;
-    height: 50px;
-    width: 150px;
-    padding-left: 0;
-}
-
-*/
