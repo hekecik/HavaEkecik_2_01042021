@@ -99,23 +99,23 @@ input{
     font-weight: 600;
 }
 
-button {
+.research p {
     background: #0065FC;
     color: white;
     font-size: 18px;
     font-weight: 600;
-    border: 0;
-    border-radius: 0 17px 17px 0;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50px;
     width: 150px;
-    padding-left: 0;
+    border: 0;
+    border-radius: 0 17px 17px 0;
+    padding-right: 20px;
+    margin: 0;
 }
-
-button p{
-  padding-right: 20px;
-}
-
-button .fa-search{
+.fa-search{
     visibility: hidden;
 }
 
@@ -708,21 +708,26 @@ button .fa-search{
         font-size: 10vw;
     }
 
-    button {
+    .button {
         font-size: 10vw;
         height: 100px;
-        width: 100px;
+        width: 200px;
         border-radius: 0px 17px 17px 0px;
+        visibility: hidden;
     }
 
-    button p{
-        display: none;
-    }
-
-    button .rechercher .fa-search{
+    .button .fa-search{
+        background: #0065FC;
         visibility: visible;
         font-size: 2.5rem;
         color: white;
+        height: 100px;
+        width: 200px;
+        border-radius: 0px 17px 17px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
     }
 
     .filter{
