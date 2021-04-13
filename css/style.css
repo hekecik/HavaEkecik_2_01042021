@@ -9,47 +9,51 @@ html{
 }
 /* Menu + logo --------------*/
 
-.logo{
+.menu .logo{
     margin-left: 40px;
     margin-top: 30px;
+    float: left;
 }
 
 .menu{
     padding-top: 0;
-    font-size: 17px;
-    font-weight: 400;
-    float: right;
-    list-style: none;
-    margin-top: 30px;
-    margin-right: 90px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    width: 1450px;
 }
 
 .menu-txt{
     display: flex;
     flex-direction: row;
+    font-size: 17px;
+    font-weight: 400;
+    list-style: none;
+    margin-right: 90px;
+    margin-top: 45px;
+    margin-left: 800px;
 }
 
 .inscription p{
     font-weight: 600;
     font-size: 17px;
     color: #0065FC;
+    float: right;
+    margin-top: 45px;
+    margin-left: -80px;
 }
 
-.menu li {
-   margin-right: 85px;
+.menu-txt li {
+   padding-right: 85px;
 }
 
-.menu a{
+.menu-txt a{
     color: black;
 }
-.menu a:hover {
+.menu-txt a:hover {
     color: #0065FC;
     border-top: solid #0065FC;
     border-width: 10px 10px 0px;
-    padding-top: 44px;
+    padding-top: 43px;
 }
 
 /* Texte + barre de recherche ------*/
@@ -75,7 +79,7 @@ html{
     padding-top: 10px;
 }
 
-.research i{
+.research .fa-map-marker-alt{
     border: solid #F2F2F2;
     background: #F2F2F2;
     width: 50px;
@@ -108,9 +112,11 @@ button {
 }
 
 button p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding-right: 20px;
+}
+
+button .fa-search{
+    visibility: hidden;
 }
 
 /* Filtres de recherche + texte -------*/
@@ -636,7 +642,7 @@ button p{
 
 /* Media queries -------------*/
 
-@media only screen and (min-width: 375px)
+@media screen and (min-width: 375px) and (max-width: 700px)
 {
     body{
         width: 100vh;
@@ -648,15 +654,25 @@ button p{
     }
 
     .menu{
-        display: inline;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 880px;
     }
 
     .menu-txt{
        font-size: 14vw;
+       margin-left: 40px;
+       display: flex;
     }
 
     .menu-txt li a{
-     }
+        padding-top: 40px;
+    }
+
+    .menu-txt li a .act{
+        margin-left: 40px;
+    }
 
     .menu a:hover {
         color: #0065FC;
@@ -665,24 +681,22 @@ button p{
         border-top: none;
     }
 
-    .inscription{
-        display: grid;
-    }
-
     .inscription p{
-        font-size: 14vw;
-
+        font-size: 12vw;
+        margin-right: 40px;
+        margin-top: -170px;
     }
 
     .container .container-text p{
         font-size: 15vw;
+        margin-right: 90px;
     }
 
     .container .container-text span{
         font-size: 10vw;
     }
 
-    .research i{
+    .research .fa-map-marker-alt{
         width: 100px;
         height: 94px;
         font-size: 2.5rem;
@@ -697,13 +711,18 @@ button p{
     button {
         font-size: 10vw;
         height: 100px;
-        width: 70px;
-        border-radius: 17px 17px 17px 17px;
-        background-image: ;
+        width: 100px;
+        border-radius: 0px 17px 17px 0px;
     }
 
     button p{
         display: none;
+    }
+
+    button .rechercher .fa-search{
+        visibility: visible;
+        font-size: 2.5rem;
+        color: white;
     }
 
     .filter{
@@ -739,7 +758,7 @@ button p{
     .family{
         grid-column: 2;
         font-size: 10vw;
-        margin-left: -70px;
+        margin-left: -100px;
     }
 
     .family p{
@@ -802,7 +821,7 @@ button p{
 
     .info{
         margin-left: 50px;
-        margin-right: 0;
+        margin-right: 70px;
     }
 
     .info i{
@@ -967,9 +986,10 @@ button p{
 
 
     .activités{
-        margin-top: 2100px;
+        padding-top: 2100px;
         width: 100vh;
         margin-left: 60px;
+        margin-right: 0;
     }
 
     .activités h2{
@@ -980,6 +1000,7 @@ button p{
     .cards-a{
         display: flex;
         flex-direction: column;
+        width: 700px;
     }
 
     .carte-container{
@@ -1085,7 +1106,7 @@ button p{
 }
 
 
-@media only screen and (min-width: 720px)
+@media only screen and (min-width: 720px) and (max-width: 1200px)
 {
     body{
         width: 1438px;
