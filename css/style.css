@@ -42,7 +42,7 @@ html{
     margin-left: -80px;
 }
 
-.menu-txt li {
+.menu-txt a {
    padding-right: 85px;
 }
 
@@ -666,11 +666,11 @@ button .fa-search{
        display: flex;
     }
 
-    .menu-txt li a{
+    .menu-txt a{
         padding-top: 40px;
     }
 
-    .menu-txt li a .act{
+    .menu-txt a .act{
         margin-left: 40px;
     }
 
