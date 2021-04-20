@@ -55,13 +55,18 @@ html{
 
 .navbar a {
     padding-right: 70px;
-  }
+}
 
-  .navbar a:active {
-    border-top: 2px solid #0065FC;
-    padding-top: 40px;
+.navbar-item{
+    border-top: 2px solid transparent;
+    padding-top: 1em;
+    text-decoration: none;
+}
+
+.navbar-item:hover, .navbar-item:active{
+    border-top-color: #0065FC;
     color: #0065FC;
-  }
+}
 
 /* Texte + barre de recherche ------*/
 
@@ -674,6 +679,16 @@ input{
 
     .navbar a{
        font-size: 5vh;
+    }
+
+    .navbar-item{
+        border-bottom: 2px solid transparent;
+        padding-bottom: 1em;
+    }
+
+    .navbar-item:hover, .navbar-item:active{
+        border-bottom-color: #0065FC;
+        border-top: none;
     }
 
     .navbar-hébergements{
