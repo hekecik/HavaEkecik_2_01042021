@@ -694,7 +694,6 @@ input{
     .navbar-hébergements{
         grid-column: 1;
         grid-row: 2;
-        padding-top: 20px;
         margin-left: 50px;
     }
 
