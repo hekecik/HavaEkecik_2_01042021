@@ -63,6 +63,10 @@ html{
     text-decoration: none;
 }
 
+.signup{
+    pointer-events: none;
+}
+
 .navbar-item:hover, .navbar-item:active{
     border-top-color: #0065FC;
     color: #0065FC;
