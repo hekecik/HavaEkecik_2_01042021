@@ -828,6 +828,7 @@ input{
         width: 1200px;
         height: 500px;
         margin-left: 60px;
+        margin-top: 50px;
     }
 
     .popular__card-image img{
