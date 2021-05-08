@@ -1,11 +1,16 @@
 body{
     font-family: 'Raleway', sans-serif;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
+    padding: 0 0;
+    margin: 0 0;
 }
 
 html{
     scroll-behavior: smooth;
+}
+
+wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
 }
 /* Menu + logo --------------*/
 
@@ -16,7 +21,7 @@ html{
     padding-top: 0;
     display: flex;
     flex-direction: row;
-    width: 1450px;
+    width: 1400px;
 }
 
 .navbar .space {
@@ -1028,7 +1033,7 @@ input{
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1200px)
+@media screen and (min-width: 768px) and (max-width: 1200px)
 {
     body{
         width: 1438px;
