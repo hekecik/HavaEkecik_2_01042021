@@ -188,7 +188,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid #DEEBFF;
+    border: 1px solid #DEEBFF;
     width: 40px;
     height: 40px;
     background: #DEEBFF;
@@ -224,7 +224,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid #DEEBFF;
+    border: 1px solid #DEEBFF;
     width: 40px;
     height: 40px;
     background: #DEEBFF;
@@ -260,7 +260,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid #DEEBFF;
+    border: 1px solid #DEEBFF;
     width: 40px;
     height: 40px;
     background: #DEEBFF;
@@ -296,7 +296,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid #DEEBFF;
+    border: 1px solid #DEEBFF;
     width: 40px;
     height: 40px;
     background: #DEEBFF;
