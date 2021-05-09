@@ -1,11 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     font-family: 'Raleway', sans-serif;
-    padding: 0 0;
-    margin: 0 0;
+    width: 1400px;
 }
 
 html{
     scroll-behavior: smooth;
+    width: 1400px;
 }
 
 wrapper{
@@ -352,7 +357,7 @@ input{
 }
 .accommodation__title{
     background-color: #F2F2F2;
-    height: 720px;
+    height: 660px;
     border-radius: 15px 15px 15px 15px;
     margin: 0 20px 0 30px;
     padding: 20px 20px 0 20px;
@@ -386,19 +391,17 @@ input{
 .card__title{
     font-size: 15px;
     font-weight: 600;
-    padding-left: 10px;
+    padding: 10px 0 0px 15px;
 }
 
 .card__subtitle{
     font-size: 15px;
     font-weight: 200;
-    padding-left: 8px;
-    margin-top: -7px;
+    padding: 6px 0 0px 15px;
 }
 
 .accommodation__stars {
-    padding-left: 10px;
-    margin-top: -8px;
+    padding: 6px 0 0px 15px;
 }
 .accommodation__stars .star-style{
     color: #0065FC;
@@ -420,23 +423,24 @@ input{
     border-radius: 15px 15px 15px 15px;
     display: flex;
     flex-direction: column;
-    width: 420px;
+    width: 350px;
+    height: 660px;
     margin: 0 20px 0 30px;
-    padding: 20px 20px 0 20px;
+    padding: 20px 15px 0 10px;
 }
 .popular h2{
     margin-bottom: 0;
     padding-left: 10px;
 }
 .popular .fa-chart-line{
-    padding-left: 110px;
+    padding-left: 70px;
 }
 .popular__card {
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    width: 350px;
+    width: 330px;
     height: 155px;
-    margin: 20px 0 0 20px;
+    margin: 20px 0 0 13px;
     box-shadow: 2px 2px 2px 2px #DCDCDC;
     display: flex;
     flex-direction: row;
@@ -504,13 +508,13 @@ input{
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     width: 330px;
-    height: 455px;
+    height: 420px;
     box-shadow: 2px 2px 2px 2px #DCDCDC;
 }
 
 .activities__card-image img{
     width: 330px;
-    height: 400px;
+    height: 365px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     opacity: 1;
@@ -525,15 +529,14 @@ input{
 .activities__card-text p{
     font-size: 15px;
     font-weight: 600;
-    padding-left: 20px
+    padding: 10px 0 0 15px;
 }
 
 .activities__smallcards{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin: 0px 35px 0 35px;
 }
 
 .activities__smallcard{
@@ -564,7 +567,7 @@ input{
     width: 300px;
     height: 170px;
     box-shadow: 2px 2px 2px 2px #DCDCDC;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .activities__smallcard-image-1 img{
@@ -586,16 +589,35 @@ input{
     display: flex;
     flex-direction: row;
     background:#F2F2F2;
-    padding: 30px 0 0 40px;
+    padding: 30px 0 0 30px;
     height: 250px;
+}
+.page-end .apropos h3{
+    padding-bottom: 15px;
+}
+.page-end .apropos p{
+    padding-bottom: 15px;
 }
 
 .page-end .hbg{
-    padding-left: 170px;
+    font-size: 15px;
+    padding: 0 150px 0 150px;
 }
-
+.page-end .hbg h3{
+    padding-bottom: 15px;
+}
+.page-end .hbg p{
+    padding-bottom: 15px;
+}
 .page-end .assistance{
-    padding-left: 250px;
+    font-size: 15px;
+    padding: 0 0px 0 100px;
+}
+.page-end .assistance h3{
+    padding-bottom: 15px;
+}
+.page-end .assistance p{
+    padding-bottom: 15px;
 }
 
 
@@ -605,21 +627,22 @@ input{
 @media screen and (min-width: 375px) and (max-width: 700px)
 {
     body{
-        width: 200vh;
+        width: auto;
     }
-
-    .logo{
-        width: 400px;
-        height: 200px;
-    }
-
     .navbar{
         display: grid;
-        padding-left: 50px;
+        width: 375px;
+    }
+    .navbar .logo{
+        width: 100px;
+        margin-top: 10px;
+        margin-left: 20px;
     }
 
     .navbar a{
-       font-size: 11vh;
+       font-size: 17px;
+       margin-top: 20px;
+       padding: 0 20px 15px 35px;
     }
 
     .navbar-item{
@@ -635,23 +658,19 @@ input{
     .navbar-hébergements{
         grid-column: 1;
         grid-row: 2;
-        margin-left: 50px;
     }
 
     .navbar-activités{
         grid-column: 2;
         grid-row: 2;
+        padding-left: 10px;
     }
 
     .navbar-signup{
         grid-column: 2;
         grid-row: 1;
-        padding-left: 80px;
+        margin-left: 40px;
     }
-    .navbar .navbar-hébergements{
-        padding-left: 30px;
-    }
-
     .navbar a:active {
         color: #0065FC;
         border-bottom: solid 4px #0065FC;
@@ -660,34 +679,36 @@ input{
     }
 
     header{
-        padding-left: 50px;
+        margin: 0px;
+        padding-left: 20px;
+        width: 375px;
     }
-
-
     header .container-text h1{
-        font-size: 13vh;
-        padding-right: 100px;
+        font-size: 20px;
+        padding-right: 25px;
     }
-
     header .container-text p{
-        font-size: 10vh;
+        font-size: 17px;
+        padding-top: 10px;
     }
 
     .search{
-        margin-top: 50px;
+        margin-top: 0px;
     }
 
     .search .btn.i {
         display: block;
-        font-size: 8vh;
-        width: 150px;
-        border-radius: 40px 40px 40px 40px;
+        font-size: 20px;
+        width: 55px;
+        height: 50px;
+        margin-left: -7px;
+        border-radius: 13px 13px 13px 13px;
     }
 
     .search .fa-map-marker-alt{
-        font-size: 8vh;
-        width: 130px;
-        border-radius: 40px 0px 0px 40px;
+        font-size: 20px;
+        width: 10px;
+        border-radius: 13px 0px 0px 13px;
     }
 
     .search .btn {
@@ -695,175 +716,180 @@ input{
     }
 
     input{
-        width: 870px;
-        height: 170px;
-        font-size: 10vh;
-        border: solid 5px #F2F2F2;
+        font-size: 17px;
+        border: solid 2px #F2F2F2;
         border-right: none;
-        padding-left: 30px;
+        padding-left: 10px;
+        width: 207px;
+        height: 45px;
     }
 
     .filter{
         display: grid;
-        margin: 40px 0px 0 80px;
+        padding: 0 0 0 20px;
+        margin: 0;
+        width: 375px;
     }
 
     .filter-title {
-        font-size: 10vh;
-        margin: 0;
+        font-size: 17px;
     }
 
     .economy{
         grid-column: 1;
+        padding: 15px 0;
+        margin: 0;
     }
     .economy p{
-        font-size: 10vh;
-        height: 180px;
-        width: 630px;
-        border: solid 8px #F2F2F2;
-        border-radius: 80px 80px 80px 80px;
+        font-size: 13px;
+        height: 40px;
+        width: 130px;
+        border: solid 2px #F2F2F2;
+        border-radius: 20px 20px 20px 20px;
         border-left: none;
-        padding-right: 50px;
+        padding-right: 25px;
     }
     .economy i{
-        width: 190px;
-        height: 180px;
-        font-size: 9vh;
-        margin-right: 50px;
-        border-radius: 90px 90px 90px 90px;
+        width: 60px;
+        font-size: 13px;
+        margin-right: 10px;
+        border-radius: 20px 20px 20px 20px;
     }
 
     .family{
         grid-column: 2;
-        margin-left: -100px;
+        padding: 15px 0;
+        margin: 0;
     }
     .family p{
-        font-size: 10vh;
-        height: 180px;
-        width: 480px;
-        border: solid 8px #F2F2F2;
-        border-radius: 90px 90px 90px 90px;
+        font-size: 13px;
+        height: 40px;
+        width: 100px;
+        border: solid 2px #F2F2F2;
+        border-radius: 20px 20px 20px 20px;
         border-left: none;
-        padding-right: 50px;
+        margin-left: -80px;
     }
     .family i{
-        width: 180px;
-        height: 180px;
-        font-size: 9vh;
-        margin-right: 50px;
-        border-radius: 100px 100px 100px 100px;
+        width: 40px;
+        font-size: 13px;
+        margin-right: 10px;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .romance{
+        margin: 0;
     }
 
     .romance p{
-        font-size: 10vh;
-        height: 180px;
-        width: 630px;
-        border: solid 8px #F2F2F2;
-        border-radius: 80px 80px 80px 80px;
+        font-size: 13px;
+        height: 40px;
+        width: 130px;
+        border: solid 2px #F2F2F2;
+        border-radius: 20px 20px 20px 20px;
         border-left: none;
-        padding-right: 50px;
+        padding-right: 25px;
     }
     .romance i{
-        width: 190px;
-        height: 180px;
-        font-size: 9vh;
-        margin-right: 50px;
-        border-radius: 90px 90px 90px 90px;
+        width: 60px;
+        font-size: 13px;
+        margin-right: 10px;
+        border-radius: 20px 20px 20px 20px;
     }
 
     .animals{
         grid-column: 1;
+        padding: 15px 0;
+        margin: 0;
     }
     .animals p{
-        font-size: 10vh;
-        height: 180px;
-        width: 818px;
-        border: solid 8px #F2F2F2;
-        border-radius: 80px 80px 80px 80px;
+        font-size: 13px;
+        height: 40px;
+        width: 170px;
+        border: solid 2px #F2F2F2;
+        border-radius: 20px 20px 20px 20px;
         border-left: none;
-        padding-right: 50px;
+        padding-right: 25px;
     }
     .animals i{
-        width: 180px;
-        height: 180px;
-        font-size: 9vh;
-        margin-right: 50px;
-        border-radius: 90px 90px 90px 90px;
+        width: 40px;
+        font-size: 13px;
+        margin-right: 10px;
+        border-radius: 20px 20px 20px 20px;
     }
 
     .info{
-       padding: 0 0 0 50px;
+       padding: 10px 30px 20px 20px;
        margin: 0;
+       width: 375px;
     }
     .info i{
-        font-size: 6vh;
-        border-radius: 90px 90px 90px 90px;
-        border: solid 6px #F2F2F2;
-        width: 80px;
-        height: 70px;
-        margin-right: 40px;
-        margin-bottom: 60px;
+        font-size: 8px;
+        margin-right: 10px;
+        border-radius: 30px 30px 30px 30px;
+        border: 1px solid #F2F2F2;
+        width: 20px;
+        height: 20px;
     }
     .info p{
-        font-size: 9vh;
+        font-size: 13px;
+        padding-right: 20px;
+    }
+    aside{
+        padding: 0;
     }
 
     .popular{
         background-color: #F2F2F2;
-        border-radius: 15px 15px 15px 15px;
+        border-radius: 0px;
         display: flex;
         flex-direction: column;
-        width: 1430px;
-        height: 2000px;
+        width: 375px;
+        height: 510px;
         margin: 0;
-        padding-left: 40px;
+        padding: 30px 0 0 20px;
     }
     .popular h2{
-        font-size: 11vh;
-        padding-left: 40px;
+        font-size: 23px;
+        padding: 0;
     }
     .popular .fa-chart-line{
-        margin-left: 400px;
+       padding: 0 0 0 100px;
     }
     .popular__cards{
-        padding-top: 40px;
+        padding-top: 10px;
+        padding-left: 5px;
     }
     .popular__card{
-        border-radius: 70px 70px 70px 70px;
-        width: 1200px;
-        height: 500px;
-        margin-left: 60px;
-        margin-top: 50px;
+        border-radius: 20px 20px 20px 20px;
+        width: 315px;
+        height: 130px;
+        margin: 15px 20px 0 0;
     }
 
     .popular__card-image img{
-        width: 400px;
-        height: 480px;
-        border-radius: 70px 0 0 70px;
-        padding: 7px 0 7px 7px;
+        width: 120px;
+        height: 122px;
+        border-radius: 20px 0 0 20px;
+        padding: 1px 0 1px 1px;
     }
 
     .popular__card-title{
-        font-size: 9vh;
-        padding-left: 50px;
-        padding-right: 70px;
-        padding-top: 60px;
+        font-size: 15px;
+        padding: 15px 20px 0 15px;
     }
 
     .popular__card-subtitle{
-        font-size: 8vh;
-        padding-left: 50px;
-        padding-top: 30px;
+        font-size: 13px;
+        padding: 7px 0 0 15px;
         margin: 0;
     }
 
     .popular__stars {
-        padding-left: 50px;
-        padding-top: 90px;
+        padding: 25px 0 0 15px;
     }
 
     .popular__stars i{
-        font-size: 7vh;
+        font-size: 10px;
     }
 
 
@@ -875,160 +901,178 @@ input{
 
     .accommodation__title{
         background-color: white;
-        padding-left: 40px;
+        padding: 0;
     }
 
     .accommodation__title h2{
-        font-size: 11vh;
-        margin-bottom: 0;
+        font-size: 23px;
+        margin: 0;
+        padding: 15px 0px 0px 0px;
     }
 
     .accommodation__cards{
         display: flex;
         flex-direction: column;
+        width: 375px;
+        padding: 0;
     }
     .accommodation__cards-1{
         display: flex;
         flex-direction: column;
+        width: 375px;
+        padding: 0;
     }
 
     .accommodation__card{
-        border-radius: 70px 70px 70px 70px;
-        width: 1200px;
-        height: 700px;
-        margin-top: 30px;
+        border-radius: 20px 20px 20px 20px;
+        width: 315px;
+        height: 185px;
+        margin: 15px 20px 10px 0px;
     }
 
     .card__image img {
-        width: 1180px;
-        height: 400px;
-        border-radius: 70px 70px 0 0;
-        padding-left: 7px;
-        padding-top: 7px;
-        padding-right: 7px;
+        width: 310px;
+        height: 100px;
+        border-radius: 20px 20px 0 0;
+        padding: 1px 0 1px 1px;
     }
 
     .card__title{
-        font-size: 8vh;
+        font-size: 15px;
         margin: 0;
-        padding-top: 10px;
-        padding-left: 50px;
+        padding: 6px 0 0 15px;
     }
 
     .card__subtitle{
-        font-size: 8vh;
+        font-size: 13px;
         margin: 0;
-        padding-left: 50px;
-        padding-top: 20px;
+        padding: 5px 0 0 15px;
     }
 
     .accommodation__stars {
-        padding-left: 50px;
-        padding-top: 35px;
+        padding: 5px 0 0 15px;
         margin: 0;
     }
 
     .accommodation__stars i{
-        font-size: 7vh;
+        font-size: 13px;
     }
 
     .afficher {
-        font-size: 9vh;
+        font-size: 17px;
         margin: 0;
-        padding-left: 50px;
-        padding-top: 20px;
+        padding-top: 15px;
+        padding-left: -10px;
     }
 
 
 
     .activités{
-        padding-top: 4000px;
-        padding-left: 50px;
-        width: 1430px;
+        width: 375px;
+        padding: 680px 0 0 30px;
+        margin: 0;
     }
 
     .activités h2{
-        font-size: 11vh;
+        font-size: 23px;
         margin-bottom: 0;
+        padding: 15px 0 0 0px;
     }
 
     .activities__cards{
         display: flex;
         flex-direction: column;
-        padding-left: 40px;
+        padding: 0;
+        margin: 15px 0 0 0;
     }
     .activities__card{
-        border-radius: 70px 70px 70px 70px;
-        width: 1200px;
-        height: 540px;
-        margin-top: 50px;
+        border-radius: 20px 20px 20px 20px;
+        width: 315px;
+        height: 160px;
+        margin: 15px 20px 10px 0px;
     }
 
     .activities__card-image img {
-        width: 1200px;
-        height: 400px;
-        border-radius: 70px 70px 0 0;
+        width: 315px;
+        height: 115px;
+        border-radius: 20px 20px 0 0;
     }
 
     .activities__card-text p{
-        font-size: 7vh;
-        padding: 30px 0 0 40px;
+        font-size: 13px;
+        padding: 6px 0 0 20px;
         margin: 0;
     }
 
     .activities__smallcards{
         margin: 0;
-        padding-top: 40px;
+        padding: 0;
     }
     .activities__smallcard{
-        border-radius: 70px 70px 70px 70px;
-        width: 1200px;
-        height: 540px;
-        margin: 0;
+        border-radius: 20px 20px 20px 20px;
+        width: 315px;
+        height: 160px;
+        margin: 15px 20px 10px 0px;
     }
 
     .activities__smallcard-image img{
-        width: 1200px;
-        height: 400px;
-        border-radius: 70px 70px 0 0;
+        width: 315px;
+        height: 115px;
+        border-radius: 20px 20px 0 0;
     }
 
     .activities__smallcard-1 {
-        border-radius: 70px 70px 70px 70px;
-        width: 1200px;
-        height: 540px;
+        border-radius: 20px 20px 20px 20px;
+        width: 315px;
+        height: 160px;
+        margin: 15px 20px 10px 0px;
     }
 
     .activities__smallcard-image-1 img{
-        width: 1200px;
-        height: 400px;
-        border-radius: 70px 70px 0 0;
+        width: 315px;
+        height: 115px;
+        border-radius: 20px 20px 0 0;
     }
 
     .page-end{
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        padding-bottom: 30px;
-        padding-left: 100px;
-        margin-top: 200px;
-        width: 1400px;
-        height: 1700px;
+        width: 375px;
+        height: 400px;
+        padding: 30px 0 0 30px;
+        margin: 20px 0 0 0;
     }
 
     .page-end .apropos{
-        font-size: 9vh;
+        font-size: 15px;
         padding: 0;
+    }
+    .page-end .apropos h3{
+        padding-bottom: 15px;
+    }
+    .page-end .apropos p{
+        padding-bottom: 15px;
     }
 
     .page-end .hbg{
-        font-size: 9vh;
-        padding: 0;
+        font-size: 15px;
+        padding: 15px 0 0 0;
     }
-
+    .page-end .hbg h3{
+        padding-bottom: 15px;
+    }
+    .page-end .hbg p{
+        padding-bottom: 15px;
+    }
     .page-end .assistance{
-        font-size: 9vh;
-        padding: 0;
+        font-size: 15px;
+        padding: 15px 0 0 0;
+    }
+    .page-end .assistance h3{
+        padding-bottom: 15px;
+    }
+    .page-end .assistance p{
+        padding-bottom: 15px;
     }
 }
 
@@ -1036,54 +1080,461 @@ input{
 @media screen and (min-width: 768px) and (max-width: 1200px)
 {
     body{
-        width: 1438px;
+        width: auto;
+    }
+    main{
+        width: 768px;
+    }
+    wrapper{
+        width: 768px;
+    }
+    .navbar{
+        display: grid;
+        width: 768px;
+    }
+    .navbar .logo{
+        width: 180px;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    .navbar a{
+       font-size: 37px;
+       margin-top: 20px;
+       padding: 5px 10px 15px 65px;
+    }
+
+    .navbar-item{
+        border-bottom: 2px solid transparent;
+        padding-bottom: 1em;
+    }
+
+    .navbar-item:hover, .navbar-item:active{
+        border-bottom-color: #0065FC;
+        border-top: none;
+    }
+
+    .navbar-hébergements{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .navbar-activités{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .navbar-signup{
+        grid-column: 2;
+        grid-row: 1;
+        margin-left: 110px;
+    }
+    .navbar a:active {
+        color: #0065FC;
+        border-bottom: solid 4px #0065FC;
+        padding-bottom: 30px;
+        border-top: none;
+    }
+
+    header{
+        margin: 0px;
+        padding-left: 30px;
+        width: 768px;
+    }
+    header .container-text h1{
+        font-size: 30px;
+        padding-right: 60px;
+    }
+    header .container-text p{
+        font-size: 25px;
+        padding-top: 10px;
+    }
+
+    .search{
+        margin-top: 0px;
+        padding: 20px 0 20px 0;
+    }
+
+    .search .btn.i {
+        display: block;
+        font-size: 20px;
+        width: 55px;
+        height: 65px;
+        margin-left: -7px;
+        border-radius: 13px 13px 13px 13px;
+    }
+
+    .search .fa-map-marker-alt{
+        font-size: 20px;
+        width: 10px;
+        border-radius: 13px 0px 0px 13px;
+    }
+
+    .search .btn {
+        display: none;
+    }
+
+    input{
+        font-size: 25px;
+        border: solid 2px #F2F2F2;
+        border-right: none;
+        padding-left: 10px;
+        width: 400px;
+        height: 60px;
+    }
+
+    .filter{
+        display: grid;
+        padding: 0 0 0 30px;
+        margin: 0;
+        width: 768px;
+    }
+
+    .filter-title {
+        font-size: 25px;
+    }
+
+    .economy{
+        grid-column: 1;
+        padding: 13px 0 0 40px;
+        margin: 0;
+    }
+    .economy p{
+        font-size: 25px;
+        height: 55px;
+        width: 230px;
+        border: solid 2px #F2F2F2;
+        border-radius: 30px 30px 30px 30px;
+        border-left: none;
+    }
+    .economy i{
+        width: 60px;
+        height: 55px;
+        font-size: 20px;
+        margin-right: 16px;
+        border-radius: 30px 30px 30px 30px;
+    }
+
+    .family{
+        grid-column: 2;
+        padding: 15px 0;
+        margin: 0;
+    }
+    .family p{
+        font-size: 25px;
+        height: 55px;
+        width: 170px;
+        border: solid 2px #F2F2F2;
+        border-radius: 30px 30px 30px 30px;
+        border-left: none;
+        margin-left: -170px;
+    }
+    .family i{
+        width: 60px;
+        height: 55px;
+        font-size: 20px;
+        margin-right: 16px;
+        border-radius: 30px 30px 30px 30px;
+    }
+    .romance{
+        grid-column: 1;
+        padding: 0 0 0 40px;
+        margin: 0;
+    }
+
+    .romance p{
+        font-size: 25px;
+        height: 55px;
+        width: 220px;
+        border: solid 2px #F2F2F2;
+        border-radius: 30px 30px 30px 30px;
+        border-left: none;
+    }
+    .romance i{
+        width: 60px;
+        height: 55px;
+        font-size: 20px;
+        margin-right: 16px;
+        border-radius: 30px 30px 30px 30px;
+    }
+
+    .animals{
+        grid-column: 1;
+        padding: 13px 0 0 40px;
+        margin: 0;
+    }
+    .animals p{
+        font-size: 25px;
+        height: 55px;
+        width: 300px;
+        border: solid 2px #F2F2F2;
+        border-radius: 30px 30px 30px 30px;
+        border-left: none;
+    }
+    .animals i{
+        width: 60px;
+        height: 55px;
+        font-size: 20px;
+        margin-right: 16px;
+        border-radius: 30px 30px 30px 30px;
+    }
+
+    .info{
+       padding: 30px 30px 20px 20px;
+       margin: 0;
+       width: 768px;
+    }
+    .info i{
+        font-size: 20px;
+        margin-right: 10px;
+        border-radius: 30px 30px 30px 30px;
+        border: 1px solid #F2F2F2;
+        width: 40px;
+        height: 40px;
+    }
+    .info p{
+        font-size: 23px;
+        padding-right: 20px;
+    }
+    aside{
+        padding: 0;
     }
 
     .popular{
-        width: 400px;
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 768px;
+        height: 730px;
+        margin: 0;
+        padding: 30px 0 0 30px;
     }
-
+    .popular h2{
+        font-size: 30px;
+        padding: 0;
+    }
+    .popular .fa-chart-line{
+       padding: 0 0 0 340px;
+       font-size: 30px;
+    }
+    .popular__cards{
+        padding-top: 10px;
+        padding-left: 15px;
+    }
     .popular__card{
-        width: 335px;
-        height: 165px;
+        border-radius: 30px 30px 30px 30px;
+        width: 660px;
+        height: 200px;
+        margin: 15px 20px 0 0;
     }
 
     .popular__card-image img{
-        width: 170px;
-        height: 160px;
+        width: 200px;
+        height: 192px;
+        border-radius: 30px 0 0 30px;
+        padding: 1px 0 1px 1px;
+    }
+
+    .popular__card-title{
+        font-size: 23px;
+        padding: 25px 20px 0 15px;
+    }
+
+    .popular__card-subtitle{
+        font-size: 22px;
+        padding: 13px 0 0 15px;
+        margin: 0;
+    }
+
+    .popular__stars {
+        padding: 60px 0 0 15px;
+    }
+
+    .popular__stars i{
+        font-size: 20px;
     }
 
 
 
+    .accommodation{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .accommodation__title{
+        background-color: white;
+        padding: 0;
+    }
+
+    .accommodation__title h2{
+        font-size: 30px;
+        margin: 0;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .accommodation__cards{
+        display: flex;
+        flex-direction: column;
+        width: 768px;
+        padding: 0;
+    }
+    .accommodation__cards-1{
+        display: flex;
+        flex-direction: column;
+        width: 768px;
+        padding: 0;
+    }
+
+    .accommodation__card{
+        border-radius: 30px 30px 30px 30px;
+        width: 660px;
+        height: 290px;
+        margin: 15px 20px 10px 10px;
+    }
+
+    .card__image img {
+        width: 653px;
+        height: 160px;
+        border-radius: 30px 30px 0 0;
+        padding: 1px 0 1px 1px;
+    }
+
+    .card__title{
+        font-size: 23px;
+        margin: 0;
+        padding: 6px 0 0 15px;
+    }
+
+    .card__subtitle{
+        font-size: 22px;
+        margin: 0;
+        padding: 10px 0 0 15px;
+    }
+
+    .accommodation__stars {
+        padding: 15px 0 0 15px;
+        margin: 0;
+    }
+
+    .accommodation__stars i{
+        font-size: 20px;
+    }
+
+    .afficher {
+        font-size: 25px;
+        margin: 0;
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+
+
+
+    .activités{
+        width: 768px;
+        padding: 1350px 0 0 30px;
+        margin: 0;
+    }
+
+    .activités h2{
+        font-size: 30px;
+        margin-bottom: 0;
+        padding: 15px 0 0 0px;
+    }
+
     .activities__cards{
-        width: 300px;
-        height: 455px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 15px 0 0 15px;
+    }
+    .activities__card{
+        border-radius: 30px 30px 30px 30px;
+        width: 660px;
+        height: 290px;
+        margin: 15px 20px 10px 0px;
     }
 
     .activities__card-image img {
-        width: 300px;
-        height: 390px;
-    }
-
-
-    .activities__smallcard{
-        width: 300px;
+        width: 660px;
         height: 230px;
+        border-radius: 30px 30px 0 0;
     }
 
-    .activities__smallcard img{
-        width: 300px;
-        height: 180px;
+    .activities__card-text p{
+        font-size: 25px;
+        padding: 6px 0 0 20px;
+        margin: 0;
     }
 
+    .activities__smallcards{
+        margin: 0;
+        padding: 0;
+    }
+    .activities__smallcard{
+        border-radius: 30px 30px 30px 30px;
+        width: 660px;
+        height: 290px;
+        margin: 15px 20px 10px 0px;
+    }
+
+    .activities__smallcard-image img{
+        width: 660px;
+        height: 230px;
+        border-radius: 30px 30px 0 0;
+    }
 
     .activities__smallcard-1 {
-        width: 300px;
-        height: 180px;
+        border-radius: 30px 30px 30px 30px;
+        width: 660px;
+        height: 290px;
+        margin: 15px 20px 10px 0px;
     }
 
     .activities__smallcard-image-1 img{
-        width: 300px;
-        height: 135px;
+        width: 660px;
+        height: 230px;
+        border-radius: 30px 30px 0 0;
+    }
+
+    .page-end{
+        display: flex;
+        flex-direction: column;
+        width: 768px;
+        height: 600px;
+        padding: 30px 0 0 50px;
+        margin: 20px 0 0 0;
+    }
+
+    .page-end .apropos{
+        font-size: 30px;
+        padding: 20px 0 0 0;
+    }
+    .page-end .apropos h3{
+        padding-bottom: 15px;
+    }
+    .page-end .apropos p{
+        padding-bottom: 15px;
+    }
+
+    .page-end .hbg{
+        font-size: 30px;
+        padding: 20px 0 0 0;
+    }
+    .page-end .hbg h3{
+        padding-bottom: 15px;
+    }
+    .page-end .hbg p{
+        padding-bottom: 15px;
+    }
+    .page-end .assistance{
+        font-size: 30px;
+        padding: 20px 0 0 0;
+    }
+    .page-end .assistance h3{
+        padding-bottom: 15px;
+    }
+    .page-end .assistance p{
+        padding-bottom: 15px;
     }
 }
