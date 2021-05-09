@@ -12,11 +12,6 @@ html{
     scroll-behavior: smooth;
     width: 1400px;
 }
-
-wrapper{
-    max-width: 1400px;
-    margin: 0 auto;
-}
 /* Menu + logo --------------*/
 
 .navbar {
@@ -1081,12 +1076,6 @@ input{
 {
     body{
         width: auto;
-    }
-    main{
-        width: 768px;
-    }
-    wrapper{
-        width: 768px;
     }
     .navbar{
         display: grid;
