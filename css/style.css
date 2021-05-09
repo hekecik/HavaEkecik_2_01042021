@@ -188,7 +188,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #DEEBFF;
+    border: 1px solid transparent;
     width: 40px;
     height: 40px;
     background: #DEEBFF;
@@ -224,7 +224,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #DEEBFF;
+    border: 1px solid transparent;
     width: 40px;
     height: 40px;
     background: #DEEBFF;
@@ -260,7 +260,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #DEEBFF;
+    border: 1px solid transparent;
     width: 40px;
     height: 40px;
     background: #DEEBFF;
@@ -296,7 +296,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #DEEBFF;
+    border: 1px solid transparent;
     width: 40px;
     height: 40px;
     background: #DEEBFF;
@@ -451,7 +451,6 @@ input{
     justify-content: center;
     flex-direction: row;
     opacity: 1;
-	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 
@@ -799,7 +798,7 @@ input{
     .animals p{
         font-size: 13px;
         height: 40px;
-        width: 170px;
+        width: 166px;
         border: solid 2px #F2F2F2;
         border-radius: 20px 20px 20px 20px;
         border-left: none;
@@ -957,7 +956,7 @@ input{
         font-size: 17px;
         margin: 0;
         padding-top: 15px;
-        padding-left: -10px;
+        padding-left: 0px;
     }
 
 
